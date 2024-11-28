@@ -1,0 +1,85 @@
+body {
+  background-color: black !important;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+button {
+  font-weight: bold !important;
+  transition: 0.3s ease !important;
+}
+
+button:hover{
+    transform: scale(1.2) translateZ(40px);
+}
+
+.data-container {
+  padding: 2vw 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  
+  
+  
+
+    /* or we can use grid instead of flexbox */
+    /* display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-gap: 10px; */
+}
+
+.data {
+  width: 15vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 3vw 0;
+}
+
+.image {
+    width: 10vw;
+    height: 30vh;
+    border-radius: 8px;
+    border: 1px solid white;
+    margin-bottom: 1vw;
+    transition: 0.6s ease;
+    object-fit: cover;
+}
+
+.title {
+  margin: 0.5vw;
+  text-align: center;
+}
+.image:hover{
+    transform: scale(1.1) translateZ(40px);
+
+
+}
+h6{
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .data-container {
+        width: auto;
+        padding: 1vh 4vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1px;
+    }
+
+    .image {
+        width: 15vh;
+        height: 30vh;
+        border-radius: 8px;
+        border: 1px solid white;
+        margin-bottom: 1vw;
+        transition: 0.3s ease;
+    }
+  }
+
